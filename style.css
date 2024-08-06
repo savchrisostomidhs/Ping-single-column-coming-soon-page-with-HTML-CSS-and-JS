@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 1100px;
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Liber Franklin", sans-serif;
+    justify-content: center;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 640px;
+}
+
+main img[alt="logo"] {
+    height: 25px;
+    margin-top: 115px;
+    width: 86px;
+}
+
+main h1 {
+    color: hsl(0, 0%, 59%);
+    font-size: 52px;
+    font-weight: 100;
+    margin-top: 56px;
+}
+
+main h1 span {
+    color: black;
+    font-weight: 700;
+}
+
+main h1+p {
+    color: hsl(209, 33%, 12%);
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+main .form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+}
+
+main .form .input input {
+    border-radius: 50px;
+    border: 1px solid hsla(0, 0%, 59%, 0.5);
+    height: 55px;
+    outline: none;
+    padding: 20px 30px;
+    width: 420px;
+}
+
+main .form .input input::placeholder {
+    color: hsla(0, 0%, 59%, 0.5);
+}
+
+main .form .input p {
+    color: hsl(354, 100%, 66%);
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 30px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+main .form button {
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 600;
+    height: 55px;
+    width: 200px;
+}
+
+main img[alt="illustration-dashboard"] {
+    margin-top: 80px;
+    width: 100%;
+}
+
+main .social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    width: 118px;
+}
+
+.fa {
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid hsla(0, 0%, 59%, 0.2);
+    color: hsl(223, 87%, 63%);
+    display: flex;
+    font-size: 15px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+}
+
+main .social-media+p {
+    color: hsla(0, 0%, 59%, 0.5);
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.fa:hover {
+    background: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 55px;
+        width: 100%;
+    }
+
+    img {
+        margin: auto;
+    }
+
+    main h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    main h1+p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    main .form {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .form .input {
+        width: 100%;
+    }
+
+    main .form .input input {
+        width: 100%;
+    }
+
+    main .form button {
+        width: 100%;
+    }
+}
